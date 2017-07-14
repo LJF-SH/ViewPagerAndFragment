@@ -1,4 +1,4 @@
-package fragment;
+package com.basefragment.demo.fragment;
 
 
 import android.support.v4.app.Fragment;
@@ -6,7 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.shenni.basefragmentdemo.R;
+import com.basefragment.demo.R;
 
 import butterknife.BindView;
 
@@ -28,7 +28,7 @@ public class ImgFragment extends BaseFragment {
     @Override
     protected void initView(View view) {
 
-//        StatusBarUtil.setTransparentForImageViewInFragment(getActivity(), null);
+//        com.basefragment.demo.utils.StatusBarUtil.setTransparentForImageViewInFragment(getActivity(), null);
         tvSecondfragment.setText("哈哈");
     }
 

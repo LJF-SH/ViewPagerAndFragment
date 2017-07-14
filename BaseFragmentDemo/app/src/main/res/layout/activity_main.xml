@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.shenni.basefragmentdemo.MainActivity">
+    android:orientation="vertical">
 
     <FrameLayout
         android:id="@+id/fl_body"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"></FrameLayout>
+        android:layout_weight="1" />
 
     <RadioGroup
         android:id="@+id/rg"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal">
+
         <RadioButton
             android:id="@+id/rb_one"
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="ViewPager"
             android:layout_weight="1"
-            android:checked="true"
-            android:layout_height="match_parent" />
+            android:checked="true" />
+
         <RadioButton
             android:id="@+id/rb_two"
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:text="Fragment"
+            android:layout_weight="1" />
     </RadioGroup>
 
 </LinearLayout>

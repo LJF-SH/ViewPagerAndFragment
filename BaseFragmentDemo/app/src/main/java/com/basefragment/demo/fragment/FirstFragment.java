@@ -1,4 +1,4 @@
-package fragment;
+package com.basefragment.demo.fragment;
 
 import android.support.annotation.ColorInt;
 import android.util.Log;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.shenni.basefragmentdemo.R;
+import com.basefragment.demo.R;
 
 import java.util.Random;
 
@@ -19,6 +19,8 @@ import butterknife.BindView;
 public class FirstFragment extends BaseFragment {
     @BindView(R.id.tv_onefragment)
     TextView tv;
+    @BindView(R.id.toolbar_title)
+    TextView toolbar_title;
     @BindView(R.id.fake_status_bar)
     View mTvTitle;
     @BindView(R.id.toobar_view)
@@ -34,6 +36,7 @@ public class FirstFragment extends BaseFragment {
     @Override
     protected void initView(View view) {
         tv.setText("第一个页面");
+        toolbar_title.setText("第一页");
         Log.e("one", "在这里进行初始化界面的操作");
         setTvTitleBackgroundColor();
     }

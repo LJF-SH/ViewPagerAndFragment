@@ -1,4 +1,4 @@
-package adapter;
+package com.basefragment.demo.adapter;
 
 
 import android.support.v4.app.Fragment;

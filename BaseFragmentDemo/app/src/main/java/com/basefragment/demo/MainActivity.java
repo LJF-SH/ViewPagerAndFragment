@@ -1,4 +1,4 @@
-package com.shenni.basefragmentdemo;
+package com.basefragment.demo;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -10,11 +10,12 @@ import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import adapter.StatusBarUtil;
-import butterknife.ButterKnife;
+import com.basefragment.demo.fragment.HomeFragment;
+import com.basefragment.demo.fragment.ImgFragment;
+import com.basefragment.demo.utils.StatusBarUtil;
+
 import butterknife.BindView;
-import fragment.HomeFragment;
-import fragment.ImgFragment;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-//        StatusBarUtil.setColor(MainActivity.this, getResources().getColor(R.color.colorAccent), 0);
+//        com.basefragment.demo.utils.StatusBarUtil.setColor(com.basefragment.demo.MainActivity.this, getResources().getColor(R.color.colorAccent), 0);
         StatusBarUtil.setTransparentForImageViewInFragment(MainActivity.this, null);
         init();
     }

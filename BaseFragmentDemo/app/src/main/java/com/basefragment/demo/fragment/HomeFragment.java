@@ -1,4 +1,4 @@
-package fragment;
+package com.basefragment.demo.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,12 +7,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.shenni.basefragmentdemo.R;
+import com.basefragment.demo.R;
+import com.basefragment.demo.adapter.ViewPagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import adapter.ViewPagerAdapter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
